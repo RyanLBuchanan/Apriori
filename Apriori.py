@@ -7,7 +7,7 @@ import pandas as pd
 
 # Data prerocessing
 dataset = pd.read_csv('Market_Basket_Optimisation.csv')
-X = dataset.iloc[:, [3,4]].values
+
 
 # Train the Apriori model on the dataset
 
