@@ -15,7 +15,7 @@ for i in range(0, 7501):
 
 
 # Train the Apriori model on the dataset
-
+from apyori import apriori
 
 # Visualize the result
 
