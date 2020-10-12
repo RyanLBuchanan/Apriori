@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 # Data prerocessing
-dataset = pd.read_csv('Market_Basket_Optimisation.csv')
+dataset = pd.read_csv('Market_Basket_Optimisation.csv', header = None)
 
 
 # Train the Apriori model on the dataset
