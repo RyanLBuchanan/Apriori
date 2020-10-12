@@ -9,6 +9,9 @@ import pandas as pd
 
 # Data prerocessing
 dataset = pd.read_csv('Market_Basket_Optimisation.csv', header = None)
+transactions = []
+for i in range(0, 7501):
+    transactions.append([str(dataset.values[i, j]) for j in range(0, 20)])
 
 
 # Train the Apriori model on the dataset
