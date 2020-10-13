@@ -36,7 +36,7 @@ def inspect(results):
 resultsinDataFrame = pd.DataFrame(inspect(results), columns = ['Left-hand Side', 'Right-hand Side', 'Support', 'Confidence', 'Lifts'])
 
 # Display the results non-sorted
-
+resultsinDataFrame
 
 # Display the results sorted by descending lifts
 
