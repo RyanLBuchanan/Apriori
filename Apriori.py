@@ -33,10 +33,11 @@ def inspect(results):
     confidence = [result[2][0][2] for result in results]
     lifts = [result[2][0][3] for result in results]
     return list(zip(lhs, rhs, supports, confidence, lifts))
-resultsinDataFrame = pd.DataFrame(inspect(results), columns = ['Left-hand Side', 'Right-hand Side', 'Support', 'Confidence', 'Lifts'])
+resultsinDataFrame = pd.DataFrame(inspect(results), columns = ['Left-hand Side', 'Right-hand Side', 'Support', 'Confidence', 'Lift'])
 
 # Display the results non-sorted
 resultsinDataFrame
 
 # Display the results sorted by descending lifts
+resultsinDataFrame.nlargest(n = 10, columns = 'Lift')
 
