@@ -23,7 +23,8 @@ rules = apriori(transactions, min_support = 0.003, min_confidence = 0.2, min_lif
 
 
 # Display the first result coming directly from the output of the apriori function
-
+results = list(rules)
+results
 
 # Put the results into a well-organized Pandas DataFrame
 
